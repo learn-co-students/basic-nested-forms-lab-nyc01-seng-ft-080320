@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+20.times do
+Ingredient.create(name: Faker::Food.ingredient, quantity: rand(1..10), recipe_id: rand(1..5))
+end
+
+5.times do
+Recipe.create(title: Faker::Food.dish)
+end
