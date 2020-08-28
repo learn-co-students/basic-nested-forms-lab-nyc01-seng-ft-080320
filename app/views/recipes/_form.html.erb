@@ -2,8 +2,8 @@
   <%= f.label :title %>
   <%= f.text_field :title %><br />
 
-  <%= fields_for :ingredients do |ingr| %>
-    <%= ingr.label :name%>
+  <%= f.fields_for :ingredients do |ingr| %>
+    <%= ingr.label :name %>
     <%= ingr.text_field :name %><br>
 
     <%= ingr.label :quantity %>
